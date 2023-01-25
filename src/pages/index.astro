@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import pf from '/pf.jpeg';
+---
+
+<Layout title="Tamir Melzer-Bronstein">
+  <div
+    class="flex h-full w-full flex-col items-center justify-center gap-14 py-10"
+  >
+    <!-- Profile -->
+    <div class="flex flex-col items-center justify-center gap-2 text-center">
+      <img src={pf} width="100px" />
+      <div class="flex flex-col items-center justify-center gap-1 px-4">
+        <h1 class="text-3xl font-bold">Tamir Melzer-Bronstein</h1>
+        <p class="w-4/5 text-lg sm:w-full">
+          Software engineer and computer networks enthusiast
+        </p>
+      </div>
+    </div>
+
+    <!-- Information -->
+    <div
+      class="flex w-3/4 flex-col items-center justify-center text-center sm:w-full"
+    >
+      <p class="hidden text-gray-500 sm:block">
+        Master's Student of Computer Science & Engineering at UC Santa Cruz
+      </p>
+      <p class="text-gray-500 sm:hidden">Master's Student at UC Santa Cruz</p>
+      <p class="text-gray-500">
+        Incoming Software Engineer at
+        <span class="ease underline transition hover:text-gray-800"
+          ><a href="https://www.higherground.earth">HigherGround LLC</a></span
+        >
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <Footer />
+  </div>
+</Layout>
